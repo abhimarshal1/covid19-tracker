@@ -63,3 +63,9 @@
 .active__indicator.deaths {
   background-color: #ec524b;
 }
+
+@media (max-width: 760px) {
+  .infobox__stats  {
+    min-width: 250px;
+  }
+}
