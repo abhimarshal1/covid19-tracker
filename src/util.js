@@ -42,7 +42,7 @@ export const showDataOnMap = (data, casesType = 'cases') => (
                 <div className="info-container">
                     <div
                         className="info-flag"
-                    ><img src={country.countryInfo.flag} /></div>
+                    ><img src={country.countryInfo.flag} alt="country-flag" /></div>
                     <div className="info-country"><strong>{country.country}</strong></div>
                     <div className="info-confirmed">Cases : {numeral(country.cases).format(0, 0)}</div>
                     <div className="info-recovered">Recovered : {numeral(country.recovered).format(0, 0)}</div>

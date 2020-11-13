@@ -34,7 +34,7 @@ const AppRight = ({ casesType }) => {
             <CardContent className="app-right">
                 <h4>Live Cases by Country</h4>
                 <Table countries={tableData} />
-                <h4>Worldwide {`${casesType == 'cases' ? 'Confirmed' : casesType == 'deaths' ? 'Death' : 'Recovered'}`} Trends</h4>
+                <h4>Worldwide {`${casesType === 'cases' ? 'Confirmed' : casesType === 'deaths' ? 'Death' : 'Recovered'}`} Trends</h4>
                 <LineGraph casesType={casesType} />
             </CardContent>
 

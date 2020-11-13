@@ -96,19 +96,19 @@ const AppLeft = ({ casesType, setCasesType }) => {
             <div className="app_stats">
                 <InfoBox
                     onClick={e => setCasesType('cases')}
-                    active={casesType == 'cases'}
+                    active={casesType === 'cases'}
                     title="Confirmed"
                     cases={countryInfo?.todayCases}
                     total={countryInfo?.cases} />
                 <InfoBox
                     onClick={e => setCasesType('recovered')}
-                    active={casesType == 'recovered'}
+                    active={casesType === 'recovered'}
                     title="Recovered"
                     cases={countryInfo?.todayRecovered}
                     total={countryInfo?.recovered} />
                 <InfoBox
                     onClick={e => setCasesType('deaths')}
-                    active={casesType == 'deaths'}
+                    active={casesType === 'deaths'}
                     title="Deaths"
                     cases={countryInfo?.todayDeaths}
                     total={countryInfo?.deaths} />

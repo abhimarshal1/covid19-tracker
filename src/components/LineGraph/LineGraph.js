@@ -93,8 +93,8 @@ const LineGraph = ({ casesType }) => {
                         datasets: [
                             {
                                 data: dailyData,
-                                backgroundColor: casesType == 'cases' ? 'rgba(204, 16, 52, 0.5)' : casesType == 'recovered' ? 'rgba(22, 165, 150, 0.5)' : 'rgba(236, 82, 75, 0.5)',
-                                borderColor: casesType == 'cases' ? '#CC1034' : casesType == 'recovered' ? '#16a596' : '#ec524b',
+                                backgroundColor: casesType === 'cases' ? 'rgba(204, 16, 52, 0.5)' : casesType === 'recovered' ? 'rgba(22, 165, 150, 0.5)' : 'rgba(236, 82, 75, 0.5)',
+                                borderColor: casesType === 'cases' ? '#CC1034' : casesType === 'recovered' ? '#16a596' : '#ec524b',
                             }
                         ]
                     }}
