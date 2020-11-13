@@ -1,0 +1,65 @@
+.infobox__stats {
+  min-width: 150px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 15px !important;
+}
+
+.infobox__stats.active {
+  border-top: none;
+  border-bottom: none;
+}
+
+.infobox__stats:hover {
+  transition: transform 0.3s ease-out;
+  transform: scale(1.03);
+}
+
+.infobox__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222831;
+}
+
+.infoBox_total,
+.infoBox_title {
+  color: white !important;
+  font-family: ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.active__indicator {
+  height: 5px;
+  width: 100%;
+  background-color: #16a596;
+}
+
+.infoBox_cases {
+  color: #CC1034 !important;
+}
+
+.infoBox_cases.recovered {
+  color: #16a596 !important;
+}
+
+.infoBox_cases.deaths {
+  color: #ec524b !important;
+}
+
+.infoBox_total {
+  padding-top: 5px;
+  font-size: 14px !important;
+}
+
+.active__indicator.cases {
+  background-color: #CC1034;
+}
+
+.active__indicator.recovered {
+  background-color: #16a596;
+}
+
+.active__indicator.deaths {
+  background-color: #ec524b;
+}

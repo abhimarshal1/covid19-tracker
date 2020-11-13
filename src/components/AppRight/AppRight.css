@@ -1,0 +1,12 @@
+.app_stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.app-right {
+  background-color: #222831;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}

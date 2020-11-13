@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react'
+import AppLeft from './components/AppLeft/AppLeft'
+import AppRight from './components/AppRight/AppRight'
+import 'leaflet/dist/leaflet.css'
 
 function App() {
+  const [casesType, setCasesType] = useState('cases');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__left">
+        <AppLeft casesType={casesType} setCasesType={setCasesType} />
+      </div>
+      <div className="app__right">
+        <AppRight casesType={casesType} />
+      </div>
     </div>
   );
 }

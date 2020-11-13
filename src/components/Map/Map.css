@@ -1,0 +1,40 @@
+.map {
+  height: 500px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0, 0.5);
+}
+
+.map .leaflet-container {
+  height: 100%;
+}
+
+.info-container {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-confirmed,
+.info-country,
+.info-recovered,
+.info-deaths {
+  font-family: ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.info-flag img {
+  width: 120px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.info-confirmed,
+.info-recovered,
+.info-deaths {
+  font-size: 14px;
+  margin-top: 5px;
+}
